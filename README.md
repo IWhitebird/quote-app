@@ -30,6 +30,6 @@ npm run dev
 ```
 
 
-This command will launch the Quote App locally, and you can access it in your web browser at `http://localhost:3000`.
+This command will launch the Quote App locally, and you can access it in your web browser at `http://localhost:5173`.
 
 Enjoy your daily quotes!
