@@ -7,7 +7,7 @@ import axios from "axios";
 import Tags from "../components/Tags";
 
 
-function Home() {
+function Home() : React.ReactElement {
 
   const [tagsModal, setTagsModal] = useState(false);
 

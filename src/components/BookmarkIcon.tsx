@@ -1,5 +1,5 @@
 
-function BookmarkIcon({ defValue }: { defValue: boolean}) {
+function BookmarkIcon({ defValue }: { defValue: boolean}) : React.ReactElement {
 
   return (
     <>

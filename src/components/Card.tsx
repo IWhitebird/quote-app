@@ -2,7 +2,7 @@ import BookmarkIcon from "./BookmarkIcon";
 import { setBookmark } from "../slices/quoteSlice";
 import { useDispatch } from "react-redux";
 
-function Card({ quote, bookmarks }: { quote: any; bookmarks: any[] }) {
+function Card({ quote, bookmarks }: { quote: any; bookmarks: any[] }) : React.ReactElement {
   const dispatch = useDispatch();
 
   function bookmarksHandleV2(e: any) {
