@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import bookmarkReducer from '../slices/bookmarkSlice';
+import quoteReducer from '../slices/quoteSlice';
 
 
 const rootReducer = combineReducers({
-    bookmark: bookmarkReducer,
+    quote: quoteReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

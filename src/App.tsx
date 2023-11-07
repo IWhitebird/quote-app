@@ -1,16 +1,18 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
-import Tags from './pages/tags'
+import Home from './pages/home'
+import Bookmark from './pages/bookmark'
+import Navbar from './components/navbar'
 
 function App() {
 
   return (
     <>
-    <Routes>
-      <Route path="/random" element={<Home />} />
-      <Route path="/tags" element={<Tags />} />
-      <Route path="/bookmark" element={<Bookmark />} />
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/bookmark" element={<Bookmark />} />
+      </Routes>
     </>
   )
 }
