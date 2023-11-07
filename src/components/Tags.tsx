@@ -23,7 +23,12 @@ function Tags() {
   async function fetchTags() {
     setTagLoading(true);
     try {
-      const response = await axios.get("https://api.quotable.io/tags");
+      const response = await axios.get("https://api.quotable.io/tags" ,        
+      {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
       setAllTags(response.data);
     } catch (error) {
       console.error("Error fetching tags:", error);
