@@ -6,6 +6,10 @@ import Navbar from './components/Navbar'
 
 function App() {
 
+  if(window.location.pathname === '/') {
+    window.location.pathname = '/home';
+  }
+
   return (
     <>
       <Navbar />
