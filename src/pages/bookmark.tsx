@@ -1,11 +1,19 @@
-import React from 'react'
+import { useSelector  } from "react-redux";
 
-type Props = {}
+import Card from "../components/Card";
 
-const Bookmark = (props: Props) => {
+function Bookmark() {
+  const bookmarks = useSelector((state: any) => state.quote.bookmarks);
+
   return (
-    <div>bookmark</div>
-  )
+    <div className="w-full">
+      <div className="mt-10 flex flex-col gap-10">
+        {bookmarks?.map((quote: any) => (
+          <Card key={quote._id} quote={quote} bookmarks={bookmarks} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Bookmark
+export default Bookmark;
