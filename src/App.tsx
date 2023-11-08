@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
-import Home from './pages/Home'
-import Bookmark from './pages/Bookmark'
-import Navbar from './components/Navbar'
+import Home from './pages/home'
+import Bookmark from './pages/bookmark'
+import Navbar from './components/navbar'
 
 function App() {
 
