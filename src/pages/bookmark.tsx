@@ -1,9 +1,8 @@
 import { useSelector  } from "react-redux";
-
 import Card from "../components/Card";
-import React from "react";
 
-function Bookmark() : React.ReactElement {
+
+const Bookmark = () => {
   const bookmarks = useSelector((state: any) => state.quote.bookmarks);
 
   return (

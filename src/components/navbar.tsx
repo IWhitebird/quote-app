@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Navbar() : React.ReactElement {
+const Navbar = () => {
   const [selectedLink, setSelectedLink] = useState(window.location.pathname);
 
   const handleLinkClick = (link : any) => {

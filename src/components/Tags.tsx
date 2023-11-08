@@ -3,7 +3,8 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../reducer/reducer";
 import { setTags } from "../slices/quoteSlice";
-function Tags() : React.ReactElement {
+
+const Tags = () => {
   const [allTags, setAllTags] = useState([]);
   const [tagLoading, setTagLoading] = useState(false);
 
