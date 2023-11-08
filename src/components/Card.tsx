@@ -20,9 +20,9 @@ function Card({ quote, bookmarks }: { quote: any; bookmarks: any[] }) : React.Re
   }
 
   return (
-    <div className="w-full flex justify-center mb-12 ">
-      <div className="relative transition-all duration-200 ease-in-out hover:scale-[101%] w-[60%] bg-[#D05252] flex flex-col gap-8 p-4 rounded-lg text-white justify-center">
-        <div className="text-3xl mt-5">{quote.content}</div>
+    <div className="w-full flex justify-center mt-10 lg:mt-0 mb-12 ">
+      <div className="relative transition-all duration-200 ease-in-out hover:scale-[101%] w-[90%] lg:w-[60%] bg-[#D05252] flex flex-col gap-8 p-4 rounded-lg text-white justify-center">
+        <div className="text-md lg:text-3xl mt-5">{quote.content}</div>
         <div className="w-[90%] flex justify-between p-4 mx-auto">
           <div className="italic">
             {quote.tags.map((tag: any, index: number) => (

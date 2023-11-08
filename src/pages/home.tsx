@@ -61,7 +61,7 @@ const Home = () => {
             {!loading && quote && quote.content ? (
                 <Card bookmarks={bookmarks} quote={quote}  />
             ) : (
-              <div className="w-[50%] mx-auto flex flex-col justify-center items-center gap-[50px]">
+              <div className="w-[80%] lg:w-[50%] mx-auto flex flex-col justify-center items-center gap-[50px]">
                 <div className="kinetic mt-10"></div>
                 <div className="mb-10 text-3xl text-white animate-pulse">
                   Fetching Quote ...
@@ -76,7 +76,7 @@ const Home = () => {
             <div className="w-[300px] flex justify-center">
               <button
                 onClick={fetchQuote}
-                className="text-2xl font-semibold rounded-full bg-green-600 w-[230px] h-[50px] hover:bg-yellow-400 hover:scale-110 hover:font-bold transition-all duration-200 ease-in-out"
+                className="text-2xl font-semibold rounded-full bg-green-600 w-[150px] lg:w-[230px] h-[50px] hover:bg-yellow-400 hover:scale-110 hover:font-bold transition-all duration-200 ease-in-out"
               >
                 New Quote
               </button>
@@ -85,7 +85,7 @@ const Home = () => {
             <div className="w-[300px] l flex justify-center">
               <button
                 onClick={() => setTagsModal(true)}
-                className="text-2xl font-semibold rounded-full text-black bg-white w-[170px] h-[50px] hover:bg-black hover:text-white hover:scale-110 hover:font-bold transition-all duration-200 ease-in-out"
+                className="text-2xl font-semibold rounded-full text-black bg-white w-[100px] lg:w-[170px] h-[50px] hover:bg-black hover:text-white hover:scale-110 hover:font-bold transition-all duration-200 ease-in-out"
               >
                 Tags
               </button>
